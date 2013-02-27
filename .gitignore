@@ -1,2 +1,8 @@
 .htaccess
 *.log
+theme/idss/.sass-cache/*
+theme/idss/.sass-cache/
+idss/.sass-cache/*
+idss/.sass-cache/
+.sass-cache/*
+.sass-cache/

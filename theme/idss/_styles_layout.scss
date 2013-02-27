@@ -658,10 +658,17 @@ div.phpinfo .center th {
 #header {
 }
 
-.headermain, h1.headermain {
-  float:left;
-  margin:0;
-  padding:0;
+.headermain,
+h1.headermain {
+  a {
+    float:left;
+    height: 100px;
+    margin:0;
+    @extend .ir;
+    padding:0;
+    @include image-2x-png(logo, 283px, 100px);
+    width: 283px;
+  }
 }
 
 .headermenu {

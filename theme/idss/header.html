@@ -21,7 +21,7 @@
       if ($home) {  // This is what gets printed on the home page only
 ?>
     <?php print_container_start(true, '', 'header-home'); ?>
-        <h1 class="headermain"><?php echo $heading ?></h1>
+        <h1 class="headermain"><a href="/" title="return to the homepage"><?php echo $heading ?></a></h1>
         <div class="headermenu"><?php echo $menu ?></div>
     <?php print_container_end(); ?>
 <?php } else if ($heading) {  // This is what gets printed on any other page with a heading
