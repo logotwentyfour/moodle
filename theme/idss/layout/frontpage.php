@@ -54,7 +54,7 @@ echo $OUTPUT->doctype() ?>
 
   <p>Returning Dermatology SpRs <a href="login/index.php">Login here</a> 
     <span>or</span>
-    if you have yet to register on this website, you can <a href="/login/signup.php?">Create a New Account here</a>.</p>
+    if you have yet to register on this website, you can <a href="/login/signup.php?">Create a New Account here</a></p>
 </div>
 
 <?php echo $OUTPUT->standard_end_of_body_html() ?>

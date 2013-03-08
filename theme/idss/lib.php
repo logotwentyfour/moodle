@@ -48,7 +48,7 @@ function idss_set_linkcolor($css, $linkcolor) {
     $tag = '[[setting:linkcolor]]';
     $replacement = $linkcolor;
     if (is_null($replacement)) {
-        $replacement = '#f25f0f';
+        $replacement = '#85308A';
     }
     $css = str_replace($tag, $replacement, $css);
     return $css;

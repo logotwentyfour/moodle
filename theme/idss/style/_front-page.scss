@@ -1,0 +1,18 @@
+// Front Page
+
+// <div>
+.front-page {
+  margin: 0 auto;
+  max-width: 320px;
+  text-align: center;
+  width: 90%;
+  
+  a {
+    margin-bottom: 1.5em;
+  }
+  
+  a,
+  span {
+    display: block;
+  }
+}

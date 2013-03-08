@@ -8,6 +8,78 @@
 **********************************************************************************************/
 
 @import "helpers";
+@import "variables";
+@import "front-page";
+
+// Hide things I don't know how to remove
+.homelink {
+  display: none;
+  visibility: hidden;
+}
+
+// Hide stuff on the signup page, and forgot password page
+#page-login-signup,
+#page-login-forgot_password {
+  .logininfo,
+  #region-post,
+  .navbar {
+    display: none;
+    visibility: hidden;
+  }
+  
+  .box {
+    margin: 0 0 1.5em 0;
+    padding: 1em;
+    width: 100%;
+  }
+}
+
+// Hide stuff on the signup page
+#page-login-index {
+  .logininfo,
+  .signuppanel,
+  .navbar,
+  .loginbox h2 {
+    display: none;
+    visibility: hidden;
+  }
+  
+  .loginpanel {
+    border: none;
+    margin: 0 auto;
+    float: none;
+    width: 33%;
+  }
+  
+  #page-header {
+    padding: 0;
+  }
+  
+  #header-left {
+    float: none;
+  }
+  
+  #page-content #region-main .region-content {
+    padding: 0;
+  }
+  
+  .subcontent {
+    margin-top: 4px;
+  }
+  
+  .loginbox {
+    margin: 0;
+  }
+  
+  h1.headermain {
+    margin: 0 0 0 -6px;
+    
+    a {
+      float: none;
+      margin: 0 auto;
+    }
+  }
+}
 
 body {
     margin: auto 0px;

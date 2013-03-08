@@ -25,7 +25,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_idss/linkcolor';
     $title = get_string('linkcolor','theme_idss');
     $description = get_string('linkcolordesc', 'theme_idss');
-    $default = '#f25f0f';
+    $default = '#85308A';
     $previewconfig = array('selector'=>'.block .content', 'style'=>'linkcolor');
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
     $settings->add($setting);
