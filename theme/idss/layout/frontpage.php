@@ -44,80 +44,18 @@ echo $OUTPUT->doctype() ?>
 <div id="custommenu"><?php echo $custommenu; ?></div>
 <?php } ?>
 
-<div id="page">
+<div class="front-page">
+  <h1 class="headermain">
+    <a href="<?php echo $CFG->wwwroot; ?>" title="Home"><?php echo $PAGE->heading ?></a>
+  </h1>
 
-    <div id="wrapper" class="clearfix">
+  <?php # needed or gives error, but not outputting anything ?>
+  <?php echo $OUTPUT->main_content() ?>
 
-<!-- START OF HEADER -->
-
-        <div id="page-header">
-            <div id="page-header-wrapper" class="wrapper clearfix">
-
-                <div id="header-left">
-                    <?php if (!empty($PAGE->theme->settings->logo)) { ?>
-                        <a href="<?php echo $CFG->wwwroot; ?>" title="Home"><img id="logo" src="<?php echo $logourl; ?>" alt="Logo" /></a>
-                    <?php } else { ?>
-                        <h1 class="headermain"><a href="<?php echo $CFG->wwwroot; ?>" title="Home"><?php echo $PAGE->heading ?></a></h1>
-                        <div class="tagline"><?php echo $tagline; ?></div>
-                    <?php } ?>
-                </div>
-                <div class="headermenu">
-                    <?php
-                        echo $OUTPUT->login_info();
-                        echo $OUTPUT->lang_menu();
-                        echo $PAGE->headingmenu;
-                    ?>
-                </div>
-            </div>
-        </div>
-
-<!-- END OF HEADER -->
-
-<!-- START OF CONTENT -->
-
-        <div id="page-content-wrapper" class="wrapper clearfix">
-            <div id="page-content">
-                <div id="region-main-box">
-                    <div id="region-post-box">
-
-                        <div id="region-main-wrap">
-                            <div id="region-main">
-                                <div class="region-content">
-                                    <?php echo $OUTPUT->main_content() ?>
-                                </div>
-                            </div>
-                        </div>
-
-                        <?php if ($hassidepost) { ?>
-                        <div id="region-post" class="block-region">
-                            <div class="region-content">
-                                <?php echo $OUTPUT->blocks_for_region('side-post') ?>
-                            </div>
-                        </div>
-                        <?php } ?>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-<!-- END OF CONTENT -->
-
-    </div> <!-- END #wrapper -->
-
-<!-- START OF FOOTER -->
-    <div id="page-footer" class="wrapper clearfix">
-           <p class="helplink"><?php echo page_doc_link(get_string('moodledocslink')) ?></p>
-        <?php
-               echo $OUTPUT->login_info();
-               echo $OUTPUT->home_link();
-            echo $OUTPUT->standard_footer_html();
-           ?>
-       </div>
-
-<!-- END OF FOOTER -->
-
-</div> <!-- END #page -->
+  <p>Returning Dermatology SpRs <a href="login/index.php">Login here</a> 
+    <span>or</span>
+    if you have yet to register on this website, you can <a href="/login/signup.php?">Create a New Account here</a>.</p>
+</div>
 
 <?php echo $OUTPUT->standard_end_of_body_html() ?>
 </body>

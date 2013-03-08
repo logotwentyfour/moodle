@@ -7,7 +7,7 @@
  * @param theme_config $theme
  * @return string
  */
-function arialist_process_css($css, $theme) {
+function idss_process_css($css, $theme) {
 
     // Set the link color
     if (!empty($theme->settings->linkcolor)) {
@@ -15,7 +15,7 @@ function arialist_process_css($css, $theme) {
     } else {
         $linkcolor = null;
     }
-    $css = arialist_set_linkcolor($css, $linkcolor);
+    $css = idss_set_linkcolor($css, $linkcolor);
 
     // Set the region width
     if (!empty($theme->settings->regionwidth)) {
@@ -23,7 +23,7 @@ function arialist_process_css($css, $theme) {
     } else {
         $regionwidth = null;
     }
-    $css = arialist_set_regionwidth($css, $regionwidth);
+    $css = idss_set_regionwidth($css, $regionwidth);
 
     // Set the custom CSS
     if (!empty($theme->settings->customcss)) {
@@ -31,7 +31,7 @@ function arialist_process_css($css, $theme) {
     } else {
         $customcss = null;
     }
-    $css = arialist_set_customcss($css, $customcss);
+    $css = idss_set_customcss($css, $customcss);
 
     // Return the CSS
     return $css;
@@ -44,7 +44,7 @@ function arialist_process_css($css, $theme) {
  * @param mixed $backgroundcolor
  * @return string
  */
-function arialist_set_linkcolor($css, $linkcolor) {
+function idss_set_linkcolor($css, $linkcolor) {
     $tag = '[[setting:linkcolor]]';
     $replacement = $linkcolor;
     if (is_null($replacement)) {
@@ -62,7 +62,7 @@ function arialist_set_linkcolor($css, $linkcolor) {
  * @return string
  */
  
-function arialist_set_regionwidth($css, $regionwidth) {
+function idss_set_regionwidth($css, $regionwidth) {
     $tag = '[[setting:regionwidth]]';
     $doubletag = '[[setting:regionwidthdouble]]';
     $replacement = $regionwidth;
@@ -81,7 +81,7 @@ function arialist_set_regionwidth($css, $regionwidth) {
  * @param mixed $customcss
  * @return string
  */
-function arialist_set_customcss($css, $customcss) {
+function idss_set_customcss($css, $customcss) {
     $tag = '[[setting:customcss]]';
     $replacement = $customcss;
     if (is_null($replacement)) {

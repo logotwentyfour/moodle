@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Configuration for Moodle's arialist theme.
+ * Configuration for Moodle's idss theme.
  *
  * DO NOT MODIFY THIS THEME!
  * COPY IT FIRST, THEN RENAME THE COPY AND MODIFY IT INSTEAD.
@@ -25,11 +25,9 @@
  *  http://docs.moodle.org/dev/Themes_2.0
  *
  * @package   moodlecore
- * @copyright 2010 Patrick Malley (http://newschoollearning.com/)
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$THEME->name = 'arialist';
+$THEME->name = 'idss';
 
 ////////////////////////////////////////////////////
 // Name of the theme. Most likely the name of
@@ -183,7 +181,7 @@ $THEME->layouts = array(
 // specific page.
 ///////////////////////////////////////////////////////////////
 
-$THEME->csspostprocess = 'arialist_process_css';
+$THEME->csspostprocess = 'idss_process_css';
 ////////////////////////////////////////////////////
 // Allows the user to provide the name of a function
 // that all CSS should be passed to before being

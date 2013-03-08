@@ -55,7 +55,9 @@ echo $OUTPUT->doctype() ?>
                 <div id="page-header-wrapper" class="wrapper clearfix">
                     <?php if ($hasheading) { ?>
                         <div id="header-left">
-                            <h1 class="headermain inside"><?php echo $PAGE->heading ?></h1>
+                            <h1 class="headermain">
+                              <a href="<?php echo $CFG->wwwroot; ?>" title="Home"><?php echo $PAGE->heading ?></a>
+                            </h1>
                         </div>
                         <div class="headermenu"><?php
                             echo $OUTPUT->login_info();

@@ -16,22 +16,20 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_arialist', language 'en', branch 'MOODLE_20_STABLE'
+ * Strings for component 'theme_idss', language 'en', branch 'MOODLE_20_STABLE'
  *
  * @package   moodlecore
- * @copyright 2010 Patrick Malley
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'Arialist';
+$string['pluginname'] = 'IDSS';
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
 $string['choosereadme'] = '
 <div class="clearfix">
 	<div class="theme_screenshot">
 
-		<h2>Arialist</h2>
-		<img src="arialist/pix/screenshot.png" />
+		<h2>IDSS</h2>
+		<img src="idss/pix/screenshot.png" />
 
 		<h3>Theme Discussion Forum:</h3>
 		<p><a href="http://moodle.org/mod/forum/view.php?id=46">http://moodle.org/mod/forum/view.php?id=46</a></p>
@@ -49,7 +47,7 @@ $string['choosereadme'] = '
 	<div class="theme_description">
 
 		<h2>About</h2>
-		<p>Arialist is a very clean and simple two-column, fluid-width theme for Moodle 2.0.</p>
+		<p>IDSS is a very clean and simple two-column, fluid-width theme for Moodle 2.0.</p>
 
 		<h2>Tweaks</h2>
 		<p>This theme is built upon both Base and Canvas, two parent themes included in the Moodle core. If you want to modify this theme, we recommend that you first duplicate it, then rename it before making your changes. This will prevent your customized theme from being overwritten by future Moodle upgrades, and you\'ll still have the original files if you make a mess. More information on modifying themes can be found in the <a href="http://docs.moodle.org/en/Theme">MoodleDocs</a>.</p>
@@ -64,7 +62,7 @@ $string['choosereadme'] = '
 
 $string['linkcolor'] = 'Link color';
 $string['linkcolordesc'] = 'This sets the link color for the theme.';
-$string['configtitle'] = 'Arialist settings';
+$string['configtitle'] = 'IDSS settings';
 $string['customcss'] = 'Custom CSS';
 $string['customcssdesc'] = 'Any CSS you enter here will be added to every page allowing your to easily customise this theme.';
 $string['tagline'] = 'Tagline';

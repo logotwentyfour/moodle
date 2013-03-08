@@ -18,13 +18,11 @@
  * Theme version info
  *
  * @package    theme
- * @subpackage arialist
- * @copyright  2010 Patrick Malley (http://newschoollearning.com/)
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @subpackage idss
  */
 
 defined('MOODLE_INTERNAL') || die;
 
 $plugin->version   = 2012112900; // The current module version (Date: YYYYMMDDXX)
 $plugin->requires  = 2012112900; // Requires this Moodle version
-$plugin->component = 'theme_arialist'; // Full name of the plugin (used for diagnostics)
+$plugin->component = 'theme_idss'; // Full name of the plugin (used for diagnostics)
