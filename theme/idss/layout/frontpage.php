@@ -142,7 +142,7 @@ echo $OUTPUT->doctype() ?>
 
       <p>Returning Dermatology SpRs <a href="login/index.php">Login here</a> 
         <span>or</span>
-        if you have yet to register on this website, you can <a href="/login/signup.php?">Create a New Account here</a></p>
+        To request an account contact <a href="mailto:info@idss.ie">info@idss.ie</a></p>
     </div>
 <?php } ?>
 
