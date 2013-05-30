@@ -81,7 +81,20 @@ echo $OUTPUT->doctype() ?>
                             <div id="region-main-wrap">
                                 <div id="region-main">
                                     <div class="region-content">
-                                        <?php echo $OUTPUT->main_content() ?>
+                                        <blockquote>
+                                          <h2>Welcome all Dermatology SpRs to your website</h2>
+                                          <p><strong>You are now part of the IDSS, the Irish Dermatology SpRs Society!</strong></p>
+                                          <p>The function of this website is to support your education as your progress through your training. Please take the time to go through your website. It provides practical information relating to lecture and study day time tables as well as National and International meetings. The core Dermatology textbook is available for your use as is the Journal of the American Academy of Dermatology. Recordings of the previous lectures are uploaded. We have a quiz site where regular brain teasers will be posted awaiting your diagnosis. An on site journal club is ready to go where you will all contribute articles of interest on a regular basis. A forum is available which can be used to ask each other questions re difficult cases or pass on messages. A conundrum site will be there for you to post questions on difficult cases for which you may or may not have the answer. Development of the site will be continuous over the years and we welcome your input. We hope you find it a useful support tool during your training!</br></br>
+                                        Patsy Lenane</br>
+                                        Michelle Murphy</br>
+                                        January 2013</p>
+                                      </blockquote>
+                                        
+                                      <?php echo $OUTPUT->main_content() ?>
+                                      
+                                      <h2>IDSS Mission Statement</h2>
+                                      <p>To enhance Dermatology training in Ireland ensuring the highest of standards.</p>
+                                      <p>To solidify the group with the intention of improving education, encouraging the exchange of ideas and the support of one another</p>
                                     </div>
                                 </div>
                             </div>
@@ -123,14 +136,19 @@ echo $OUTPUT->doctype() ?>
       </h1>
 
       <?php # needed or gives error, but not outputting anything ?>
-      <?php echo $OUTPUT->main_content() ?>
+      <div class="visually-hidden">
+        <?php echo $OUTPUT->main_content() ?>
+      </div>
 
       <p>Returning Dermatology SpRs <a href="login/index.php">Login here</a> 
         <span>or</span>
-        if you have yet to register on this website, you can <a href="/login/signup.php?">Create a New Account here</a></p>
+        To request an account contact <a href="mailto:info@idss.ie">info@idss.ie</a></p>
     </div>
 <?php } ?>
 
 <?php echo $OUTPUT->standard_end_of_body_html() ?>
+
+<?php # phpinfo(); ?>
+
 </body>
 </html>

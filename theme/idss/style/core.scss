@@ -1,4 +1,5 @@
 @import "helpers";
+@import "eva";
 
 /* Global
 ---------------------------*/
@@ -14,8 +15,8 @@ a:hover {
 }
 
 #wrapper {
+    min-width: 600px;
     padding:0 20px;
-    border-top:15px solid #eee;
 }
 
 #page {
@@ -52,6 +53,9 @@ fieldset#general legend {
 
 #page-header {
     padding: 50px 0 25px;
+    background: url("../theme/idss/pix/header_swirls_left.png") no-repeat;
+    top: 0;
+    left: 0;
 }
 
 #page-site-index #page-header {
