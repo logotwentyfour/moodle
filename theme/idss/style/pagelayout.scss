@@ -141,12 +141,21 @@ body {
 #page-content #region-post .region-content {
     overflow: hidden;
     padding: 20px 0 20px 10px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #eaecee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eaecee));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#eaecee 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#eaecee 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#eaecee 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#eaecee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaecee',GradientType=0 );
 }
 
 #page-footer {
     clear: both;
     float: left;
     width: 100%;
+    background-color: #d4d6d7;
 }
 
 .has_dock.side-post-only .page-middle #region-main {
