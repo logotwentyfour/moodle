@@ -24,7 +24,7 @@
  */
 
 // The name of the theme
-$THEME->name = 'mymobile';
+$THEME->name = 'idss-mobile';
 
 // This theme relies on canvas and of course base themes
 $THEME->parents = array(
