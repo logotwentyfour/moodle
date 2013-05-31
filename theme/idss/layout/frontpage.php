@@ -130,20 +130,34 @@ echo $OUTPUT->doctype() ?>
 
     </div> <!-- END #page -->
 <?php } else { ?>
-    <div class="front-page">
-      <h1 class="headermain">
-        <a href="<?php echo $CFG->wwwroot; ?>" title="Home"><?php echo $PAGE->heading ?></a>
-      </h1>
+  <div id="page">
 
-      <?php # needed or gives error, but not outputting anything ?>
-      <div class="visually-hidden">
-        <?php echo $OUTPUT->main_content() ?>
-      </div>
+    <div id="wrapper" class="clearfix">
 
-      <p>Returning Dermatology SpRs <a href="login/index.php">Login here</a> 
-        <span>or</span>
-        To request an account contact <a href="mailto:info@idss.ie">info@idss.ie</a></p>
+      <!-- START OF HEADER -->
+
+        <div id="page-header">
+          <div id="page-header-wrapper" class="wrapper clearfix">
+            <div class="front-page">
+              <h1 class="headermain">
+                <a href="<?php echo $CFG->wwwroot; ?>" title="Home"><?php echo $PAGE->heading ?></a>
+              </h1>
+
+              <?php # needed or gives error, but not outputting anything ?>
+                <div class="visually-hidden">
+                  <?php echo $OUTPUT->main_content() ?>
+                </div>
+
+                <p>Returning Dermatology SpRs <a href="login/index.php">Login here</a> 
+                  <span>or</span>
+                  To request an account contact <a href="mailto:info@idss.ie">info@idss.ie</a>
+                </p>
+            </div>
+          </div>
+        </div>
     </div>
+  </div>
+  
 <?php } ?>
 
 <?php echo $OUTPUT->standard_end_of_body_html() ?>
