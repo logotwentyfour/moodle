@@ -1481,16 +1481,11 @@ overflow:auto !important;
 }
 /*current highlight */
 .weeks .current .headingwrap, .topics .current div.headingwrap, .current .ui-bar-b, .current .left.side, .tabtree ul.tabrow0 li.selected a, .ui-btn-active, #page-course-view-topcollPAGE .current {
-    border: 1px solid #F7C942;
     background: #fadb4e;
     color: #333;
     text-shadow: 0 1px 0    #fff;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#fceda7), to(#fadb4e)); /* Saf4+, Chrome */
-    background-image: -webkit-linear-gradient(top, #fceda7, #fadb4e); /* Chrome 10+, Saf5.1+ */
-    background-image:    -moz-linear-gradient(top, #fceda7, #fadb4e); /* FF3.6 */
-    background-image:     -ms-linear-gradient(top, #fceda7, #fadb4e); /* IE10 */
-    background-image:      -o-linear-gradient(top, #fceda7, #fadb4e); /* Opera 11.10+ */
-    background-image:         linear-gradient(top, #fceda7, #fadb4e);
+    background-color: #85308A;
+    border: 1px solid #58195d;
 }
 .ui-btn-active a.ui-link-inherit {  color: #333; }
 /*changes to nav bar at top and header */
